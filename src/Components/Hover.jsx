@@ -7,7 +7,7 @@ const Hover = () => {
     const isHovering = useHover(ref);
     console.log(isHovering); 
     return (
-        <div ref={ref} style={{width: 300, height: 300, background: 'red', margin: 20,}}>
+        <div ref={ref} style={{width: 300, height: 300, background: isHovering ? 'red' : 'green', margin: 20,}}>
             <button onClick={() => console.log(ref.current)}>Click me</button>
         </div>
     );
