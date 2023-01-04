@@ -18,9 +18,6 @@ const List = () => {
     
 }
 
-    // useEffect(() => {
-    //     fetchTodos(page, limit)
-    // }, [])
     return (
         <div ref={parantRef} style={{height: '80vh', overflow: 'auto'}}>
             {todos.map(todo =>
